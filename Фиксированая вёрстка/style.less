@@ -1,0 +1,516 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to top, #3e4750, #525b64);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+a, p {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 0 0 2px;
+}
+
+.container {
+	width: 1160px;
+	height: 80+500+400+400+50+40*5px;
+	margin: auto;
+
+}
+
+header, .hero, .product, .salesGraph,
+.shoppingBag, .map, footer {
+	background: linear-gradient(to top, #f3f3f3, #ffffff);
+	box-shadow: 0 10px 20px 20px #495159;
+}
+
+
+
+header {
+	width: 1160px;
+	height: 80px;
+	margin: auto;
+	margin-top: 40px;
+	position: relative;
+
+	.ecommElem {
+		display: inline-block;
+		position: absolute;
+		left: 40px;
+		top: 19px;
+		border-right: 1px rgba(51, 51, 51, 0.35) solid;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 64px;
+
+		a {
+			color: #333;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 21px;
+
+			@media screen(min-width: 1600px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.navbar {
+		display: inline-block;
+		position: absolute;
+		left: 283px;
+		top: 29px;
+
+		li {
+			display: inline-block;
+			list-style-type: none;
+			margin-left: 44px;
+
+			a {
+				color: #333;
+				font-size: 12px;
+				font-weight: 800;
+				line-height: 21px;
+				padding-bottom: 8px;
+
+				&:hover {
+					border-bottom: 3px #525b64 solid;
+				}
+			}
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 22px;
+		right: 212px;
+		border-right: 1px rgba(51, 51, 51, 0.35) solid;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 10px;
+	}
+
+	form {
+		position: absolute;
+		right: 40px;
+		top: 28px;
+
+		input {
+			width: 160px;
+			height: 20px;
+			border: 0 gray solid;
+			position: relative;
+
+			&:focus {
+				border: 1px rgba(51, 51, 51, 0.35) solid;
+				border-radius: 5px;
+				top: -1px;
+				left: 1px;
+			}
+		}
+
+	}
+}
+
+.hero {
+	width: 1160px;
+	height: 500px;
+	background-color: #fafafa;
+	margin: auto;
+	margin-top: 40px;
+	position: relative;
+
+	.description {
+		width: 500px;
+		position: absolute;
+		top: 197px;
+		left: 40px;
+
+		span, p {
+			color: #444;
+			font-weight: 400;
+		}
+
+		p {
+			margin-top: 17px;
+			font-size: 14px;
+			line-height: 28px;
+		}
+	}
+
+	.inscription {
+		position: absolute;
+		bottom: 52px;
+		right: 40px;
+		color: white;
+		font-size: 64px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 100;
+		line-height: 21px;
+		z-index: 2;
+	}
+
+	[src*="Fine_model"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		// z-index: 1;
+	}
+
+	[src*="Logo.png"] {
+		position: absolute;
+		top: 49px;
+		left: 39px;
+	}
+
+	[src*="Logo2.png"] {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		z-index: 2;
+	}
+
+	a {
+
+		&:hover {
+			cursor: pointer;
+		}
+	
+		button {
+			color: white;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			position: absolute;
+			bottom: 41px;
+			left: 41px;
+			width: 152px;
+			height: 43px;
+			background-color: #5f4f4c;
+			background-image: linear-gradient(to top, #4ca15b 0%, #6ab177 100%);
+			border: 1px solid #4ca15b;
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25); 
+
+			&:active {
+				background-color: #5f4f4c;
+				background-image: linear-gradient(to top, #4ca15b 0%, #5ab187 100%);
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+		}
+	}
+	
+}
+
+.product {
+	width: 360px;
+	height: 400px;
+	float: left;
+	margin-top: 40px;
+	background-color: #fafafa;
+	display: inline-block;
+	position: relative;
+
+	[src*="Foto_poduct"] {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	[src*="VANS"] {
+		position: absolute;
+		z-index: 2;
+		right: 17px;
+		bottom: 150px;
+	}
+
+	#price {
+		position: absolute;
+		bottom: 25px;
+		left: 30px;
+		color: #444444;
+		font-size: 22px;
+	}
+
+	a {
+
+		&:hover {
+			cursor: pointer;
+		}
+		
+		button {
+			font-size: 10px;
+			font-weight: 400;
+			line-height: 21px;
+			color: white;
+			width: 112px;
+			height: 32px;
+			background-color: #5f4f4c;
+			background-image: linear-gradient(to top, #65a0b8 0%, #80bcd4 100%);
+			border: 1px solid #65a0b8;
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+			position: absolute;
+			right: 31px;
+			bottom: 21px;
+
+			&:active {
+				background-color: #5f4f4c;
+				background-image: linear-gradient(to top, #45a0b8 0%, #60bcd4 100%);
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.imfo {
+			color: #444;
+			position: absolute;
+			top: 262px;
+			left: 30px;
+
+		p {
+			font-size: 21px;
+			font-weight: 700;
+			line-height: 21px;
+			& + br + p {
+				position: relative;
+				top: -8px;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+		}
+		span {
+			position: relative;
+			top: -8px;
+			font-size: 12px;
+			font-weight: 900;
+			line-height: 24px;
+			letter-spacing: 0.6px;
+
+			a {
+				color: #65a0b8;
+				font-size: 10px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.salesGraph {
+	width: 760px;
+	height: 400px;
+	float: right;
+	margin-top: 40px;
+	background-color: #fafafa;
+	display: inline-block;
+	position: relative;
+
+	img {
+		position: absolute;
+		z-index: 0;
+	}
+
+	p {
+		text-shadow: none;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		color: white;
+		font-family: HelveticaNeue;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 21px;
+		z-index: 10;
+	}
+
+	table {
+		border-collapse: collapse;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 105px;
+
+		td {
+			width: 33%;
+			vertical-align: middle;
+			text-align: center;
+
+			&:nth-child(2) {
+				border-left: 1px red solid;
+				border-right: 1px red solid;
+			}
+		}
+	}
+}
+
+.shoppingBag {
+	width: 760px;
+	height: 400px;
+	float: left;
+	margin-top: 40px;
+	background-color: #fafafa;
+	display: inline-block;
+	position: relative;
+
+	table {
+		position: absolute;
+		left: 30px;
+		top: 70px;
+		width: 760 - 30 - 33px;
+		border-collapse: collapse;
+
+		tr {
+			height: 87px;
+
+			&:nth-child(1), &:nth-child(2) {
+				border-bottom: 1px #d7d7d7 solid;
+			}
+			
+			td:nth-child(2) {
+				font-weight: 700;
+			}
+
+			td:nth-child(3) {
+				width: 30px;
+				height: 30px;
+				vertical-align: middle;
+				text-align: center;
+			}
+			td:nth-child(4) {
+				width: 100px;
+				text-align: right;
+			}
+		}
+
+		td {
+			a {
+				font-size: 10px;
+				text-shadow: none;
+				color: #65a0b8;
+			}
+			img {
+				position: relative;
+				top: 2px;
+			}
+
+			table {
+				width: 30px;
+				height: 30px;
+				left: 0;
+				top: 0;
+				position: relative;
+				border: 1px #d7d7d7 solid;
+
+				tr {
+					background-color: #fff;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+
+	p {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		font-size: 20px;
+	}
+
+	span {
+		width: 100%;
+		position: absolute;
+		bottom: 30px;
+
+		p {
+			display: inline-block;
+			float: left;
+			margin-top: -18px;
+		}
+		a {
+			display: inline-block;
+			float: right;
+			margin-right: 30px;
+
+			button {
+				color: white;
+				width: 112px;
+				height: 32px;
+				background-color: #5f4f4c;
+				background-image: linear-gradient(to top, #e88e13 0%, #f7a412 100%);
+				border: 1px solid #ef8a00;
+				box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+			}
+		}
+	}
+}
+
+.map {
+	width: 360px;
+	height: 400px;
+	float: right;;
+	margin-top: 40px;
+	background-color: #fafafa;
+	display: inline-block;
+	position: relative;
+
+	p {
+		position: absolute;
+		bottom: 20px;
+		left: 30px;
+
+		span {
+			font-size: 10px;
+			font-weight: 500;
+			text-shadow: none;
+		}
+	}
+}
+
+footer {
+	width: 1160px;
+	height: 50px;
+	margin-top: 40px;
+	background-color: #fafafa;
+	display: inline-block;
+	position: relative;
+
+	#ecommElem {
+		display: inline-block;
+		position: absolute;
+		left: 40px;
+		top: 8px;
+		border-right: 1px rgba(51, 51, 51, 0.35) solid;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-right: 64px;
+
+		a {
+			color: #333;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 21px;
+		}
+	}
+	.socialMedia {
+		position: absolute;
+		right: 41px;
+		top: 18px;
+
+		img {
+			margin-right: 21px;
+		}
+	}
+}
